@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CENTER</title>
+    <style>
+    .a {
+        background-color: maroon;
+        height: 50vh;
+        width: 80vw;
+        margin: 0 auto;
+    }
+    .b {
+        background-color: navy;
+        height: 25vh;
+        width: 25vw;
+        margin: 0 auto;
+    }
+    .c {
+        background-color: sandybrown;
+        height: 50vh;
+    }
+    .d {
+        background-color: cadetblue;
+        height: 25vh;
+        width: 25vw;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        line-height: 25vh;
+        
+    }
+    .menu {
+        background-color: indianred;
+    }
+    .menu::after {
+        content: "";
+        display: block;
+        clear: both;
+
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+    li {
+        float: left;
+        padding: 50px;
+        background-color: bisque;
+    }
+    li:hover {
+        background-color: salmon;
+        color: bisque;
+    }
+
+    </style>
+</head>
+
+<body>
+    <div class="a">
+        <div class="b"></div>
+    </div>
+
+    <div class="c">
+        <div class="d"> DDD</div>
+    </div>
+
+    <div class="menu">
+        <ul>
+            <li>MENU A</li>
+            <li>MENU B</li>
+            <li>MENU C</li>
+        </ul>
+    </div>
+</body>
+</html>

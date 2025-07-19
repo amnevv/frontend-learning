@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOVE</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        /* box-sizing: border-box; */
+
+    }
+    .header {
+        background-color: seashell;
+        color: maroon;
+        /* height: 10vh; */
+        position: relative;
+
+    }
+    .header::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    .main {
+        background-color: bisque;
+        color: maroon;
+        height: 80vh;
+        padding-top: 30px;
+
+    }
+    .logo {
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        left: 3%;
+        transform: translate(-50%, -50%);
+    }
+    .logo img {
+        height: 6vh;
+    }
+
+    div.menu {
+        width: 25vw;
+        float: right;
+    }
+    ul.menu {
+        list-style: none;
+        padding: 0;
+    }
+
+    ul.menu::after {
+        display: block;
+        content: '';
+        clear: both;
+    }
+    li {
+        float: right;
+        padding: 25px 35px;
+        /* text-align: center;        */
+    }
+
+    li:hover {
+        background-color: maroon;
+        color:seashell;
+    }
+
+    .main-text {
+        height: 10vh;
+        /* width: 100vw; */
+        text-align: center;
+    }
+    h1:hover, h4:hover {
+        color: rosybrown;
+        transition: color linear 200ms;
+    }
+    .main-article {
+        /* background-color: aqua; */
+        height: 60vh;
+        width: 1300px;
+        margin: 0 auto;
+    }
+    article {
+        background-color: maroon;
+        color: seashell;
+        width: 333px;
+        height: calc(30vh - 20px); /* Not sure why use calc*/
+        float: left;
+        margin: 10px 49px;
+        overflow: hidden; /* Optional: hides any overflow from the image */
+        border-radius: 10px;
+        border: 1px solid maroon;
+    }
+    article img {
+        width: 100%;
+        height: 70%;
+        display: block;
+    }
+    .text-art {
+        padding: 10px 10px;
+    }
+    .text-art p {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;       /* Number of lines to show */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    .footer {
+        background-color:seashell;
+        height: 10vh;
+        text-align: center;
+        line-height: 10vh;
+    }
+    h5 {
+        font-weight: 100;
+    }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="https://www.reshot.com/preview-assets/icons/K63VMZLHUW/love-water-K63VMZLHUW.svg" alt="">
+        </div>
+       
+        <div class="menu">
+            <ul class="menu">
+                <li>♥︎&nbsp;♥︎&nbsp;♥︎</li>
+                <li>♥︎&nbsp;♥︎</li>
+                <li>♥︎</li>
+            </ul>
+        </div>
+    </div> <!-- End of header -->
+
+    <div class="main">
+        <div class="main-text">
+            <h1>Where is the love ?</h1>
+            <h4>[ Which one that you place your love ]</h4>
+        </div>
+        <div class="main-article">
+            <div class="article1">
+                <article class="art1">
+                    <img src="https://media.posterstore.com/site_images/67b7625b742c2109f011059a_1719035508_7858-3.jpg?auto=compress%2Cformat&fit=max&w=3840" alt=""/>
+                    <div class="text-art">
+                        <h4>Love</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quisquam autem, nostrum dolore perspiciatis consequuntur, velitobcaecaticorporisharum, deleniti neque? Quidem exercitationem quisquam mollitia nemo! Sequi, error facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo laborum odit culpa consequatur corrupti nobis quisquam numquam debitis? Officia placeat nulla blanditiis incidunt voluptatibus natus odit cum reprehenderit a aliquam?</p>
+                    </div>
+                    </article>
+                <article class="art2">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNmpQ8GHfxdlCLc5GL9W-5100wH2ckZTgc4g&s" alt="">
+                    <div class="text-art">
+                        <h4>Love</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quisquam autem, nostrum dolore perspiciatis consequuntur, velitobcaecaticorporisharum, deleniti neque? Quidem exercitationem quisquam mollitia nemo! Sequi, error facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo laborum odit culpa consequatur corrupti nobis quisquam numquam debitis? Officia placeat nulla blanditiis incidunt voluptatibus natus odit cum reprehenderit a aliquam?</p>
+                    </div>
+                </article>
+                <article class="art3">
+                    <img src="https://images.squarespace-cdn.com/content/v1/5e8f0a50ea1914768acbc668/78c2ceea-5ac8-420c-b0a9-e40bc5a1c158/KoskelaMED.jpg" alt="">
+                    <div class="text-art">
+                        <h4>Love</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quisquam autem, nostrum dolore perspiciatis consequuntur, velitobcaecaticorporisharum, deleniti neque? Quidem exercitationem quisquam mollitia nemo! Sequi, error facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo laborum odit culpa consequatur corrupti nobis quisquam numquam debitis? Officia placeat nulla blanditiis incidunt voluptatibus natus odit cum reprehenderit a aliquam?</p>
+                    </div>
+                </article>
+            </div>
+            <div class="article2">
+                <article class="art4">
+                    <img src="https://imageio.forbes.com/specials-images/imageserve/659c2aba715f4fb34c9d773c/A-Young-Couple-Work-Together-To-Improve-Their-Love-Relationship/0x0.jpg?format=jpg&crop=1149,539,x0,y0,safe&width=960" alt="building our love">
+                    <div class="text-art">
+                        <h4>Love</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quisquam autem, nostrum dolore perspiciatis consequuntur, velitobcaecaticorporisharum, deleniti neque? Quidem exercitationem quisquam mollitia nemo! Sequi, error facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo laborum odit culpa consequatur corrupti nobis quisquam numquam debitis? Officia placeat nulla blanditiis incidunt voluptatibus natus odit cum reprehenderit a aliquam?</p>
+                    </div>
+                </article>
+                <article class="art5">
+                    <img src="https://assets.teenvogue.com/photos/61fc278f1776adeaa12f2bba/3:2/w_4800,h_3200,c_limit/GettyImages-1201616507.jpg" alt="">
+                    <div class="text-art">
+                        <h4>Love</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quisquam autem, nostrum dolore perspiciatis consequuntur, velitobcaecaticorporisharum, deleniti neque? Quidem exercitationem quisquam mollitia nemo! Sequi, error facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo laborum odit culpa consequatur corrupti nobis quisquam numquam debitis? Officia placeat nulla blanditiis incidunt voluptatibus natus odit cum reprehenderit a aliquam?</p>
+                    </div>
+                </article>
+                <article class="art6">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRsx7zTGnRvfU6ftwetbioaRz0SGbIibINMXT67PwXFJoVSJsJpds1UBeSdlLMHbubUJw&usqp=CAU" alt="">
+                    <div class="text-art">
+                        <h4>Love</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quisquam autem, nostrum dolore perspiciatis consequuntur, velitobcaecaticorporisharum, deleniti neque? Quidem exercitationem quisquam mollitia nemo! Sequi, error facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo laborum odit culpa consequatur corrupti nobis quisquam numquam debitis? Officia placeat nulla blanditiis incidunt voluptatibus natus odit cum reprehenderit a aliquam?</p>
+                    </div>
+                </article>
+            </div>
+
+        </div> <!-- End of main -->
+    </div>
+    <div class="footer">
+        <h5>Copyright © June 2025 by Ma-i</h5>
+    </div>
+</body>
+</html>

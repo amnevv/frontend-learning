@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        background-color: black;
+    }
+    .header {
+        background-color: maroon;
+        color: whitesmoke;
+        position: relative;
+    }
+    .left {
+        background-color:burlywood;
+        height: 80vh;
+        width: 20vw;
+        float: left;
+        text-align: center;
+    }
+    .main {
+        background-color: whitesmoke;
+        height: 80vh;
+        width: 80vw;
+        float: left;
+        padding: 5vh 6vw;
+    }
+    .header::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    ul.header-menu {
+        list-style-type: none;
+        padding: 0;
+    }
+    li.header-a:hover, li.header-b:hover, li.header-c:hover {
+        background-color: black;
+        color: white;
+    }
+    .header-a {
+        float: left;
+        padding: 9vh 3vw;
+    }
+    .header-b {
+        float: left;
+        padding: 9vh 3vw;
+    }
+    .header-c {
+        float: left;
+        padding: 9vh 3vw;
+    }
+    .button-group {
+        position: absolute;
+        right: 1px;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    button {
+        /* float: right; */
+        margin: 0 10px;
+        padding: 10px 10px;
+        font-size: 14px;
+    }
+    .left-sub {
+        display: inline-block;
+    }
+    li.sub1 {
+        list-style-type: none;
+        line-height: 1.5;
+        margin: 30px;
+    }
+    li.sub1 li {
+        text-align: left;
+        margin-left: 10px; 
+    }
+    ul.sub1 {
+        margin-left: 50px;
+    }
+    h3 {
+        margin-left: -15px;
+    }
+    h1 {
+        padding: 2vh;
+    }
+    p {
+        padding: 2vh;
+    }
+    article {
+        background-color:maroon;
+        width: 30%;
+        float: left;
+        margin: 30px 17px;
+        padding: 10vh 10vw;
+    }
+    .main-article {
+        height: 60%;
+    }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <ul class="header-menu">
+            <li class="header-a">MENU A</li>
+            <li class="header-b">MENU B</li>
+            <li class="header-c">MENU C</li>
+        </ul>
+        <div class="button-group">
+            <button class="sign-in">Sign-in</button>
+            <button class="register">Register</button>
+        </div>    
+    </div>
+
+    <div class="left">
+        <ul class="left-sub">
+            <li class="sub1"> 
+                <h3>subject 1</h3>
+                <ul class="sub1">
+                    <li>1&nbsp;nanana</li>
+                    <li>2&nbsp;bababa</li>
+                    <li>3&nbsp;lalala</li>
+                    <li>4&nbsp;lalala</li>
+                    <li>5&nbsp;lalala</li>
+                </ul>
+            </li>
+
+            <li class="sub1">
+                <h3>subject 2</h3>
+                <ul class="sub1">
+                    <li>1&nbsp;&nbsp;hahaha</li>
+                    <li>2&nbsp;&nbsp;jajaja</li>
+                    <li>3&nbsp;&nbsp;mamama</li>
+                    <li>4&nbsp;&nbsp;mamama</li>
+                    <li>5&nbsp;&nbsp;mamama</li>
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+
+    <div class="main">
+        <div class="main-article">
+            <h1>This is an Article.</h1>
+            <p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+        </div>
+        <div class="main-articless">
+            <article class="a">A</article>
+            <article class="b">B</article>
+            <article class="c">C</article>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .a {
+        float: left;
+        background-color:bisque;
+        width: 50%;
+        height: 30vh;
+        position: relative;
+        padding: 10px 0;   
+    }
+    .a::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    ul.aa {
+        /* background-color: aquamarine; */
+        float: left;
+        list-style: none;
+        height: 100%;
+        width: 100%;
+    }
+    li.aa {
+        background-color:maroon;
+        float: left;
+        width: 230px;
+        height: 100%;
+        margin: 0 10px;
+        
+    }
+    .a9 {
+        background-color: bisque;
+        float: left;
+        width: 56px;
+        height: 60px;
+        margin: 10px 10px;
+    }
+    .a6 {
+        background-color: bisque;
+        float: left;
+        width: 95px;
+        height: 60px;
+        margin: 10px 10px;
+    }
+    .a3 {
+        background-color: bisque;
+        width: 200px;
+        height: 60px;
+        margin: 15px 15px;
+    }
+    
+    .b  {
+        background-color:maroon;
+        width: 50%;
+        height: 30vh;
+        float: left;
+    }
+    .b4 {
+        background-color: bisque;
+        float: left;
+        width: 358px;
+        height: 108px;
+        margin: 10px 10px;
+    }
+
+    .c {
+        background-color:palevioletred;
+        height: 40vh;
+        width: 100%;
+        float: left;
+    }
+    .c2 {
+        background-color: lavender;
+        width: 716px;
+        height: 306px;
+        margin: 20px;
+        float: left;
+    }
+
+    .d {
+        background-color:paleturquoise;
+        height: 30vh;
+        width: 100%;
+        float: left;
+    }
+    ul.d-left, ul.d-right {
+        list-style: none;
+    }
+    li.d3-left {
+        background-color:pink;
+        float: left;
+        height: 170px;
+        width: 150px;
+        margin: 40px;
+    }
+    li.d3-right {
+        background-color:pink;
+        float: right;
+        height: 170px;
+        width: 150px;
+        margin: 40px;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="a">
+            <ul class="aa">
+                <li class="aa">
+                    <div class="a9"></div>
+                    <div class="a9"></div>
+                    <div class="a9"></div>
+                    <div class="a9"></div>
+                    <div class="a9"></div>
+                    <div class="a9"></div>
+                    <div class="a9"></div>
+                    <div class="a9"></div>
+                    <div class="a9"></div>
+                </li>
+                <li class="aa">
+                    <div class="a6"></div>
+                    <div class="a6"></div>
+                    <div class="a6"></div>
+                    <div class="a6"></div>
+                    <div class="a6"></div>
+                    <div class="a6"></div>
+                </li>
+                <li class="aa">
+                    <div class="a3"></div>
+                    <div class="a3"></div>
+                    <div class="a3"></div>
+                </li>
+            </ul>
+    </div>
+
+    <div class="b">
+        <div class="b4"></div>
+        <div class="b4"></div>
+        <div class="b4"></div>
+        <div class="b4"></div>
+    </div>
+
+    <div class="c">
+        <div class="c2"></div>
+        <div class="c2"></div>
+    </div>
+    
+    <div class="d">
+        <ul class="d-left">
+            <li class="d3-left"></li>
+            <li class="d3-left"></li>
+            <li class="d3-left"></li>
+        </ul>
+        <ul class="d-right">
+            <li class="d3-right"></li>
+            <li class="d3-right"></li>
+            <li class="d3-right"></li>
+        </ul>
+    </div>
+</body>
+</html>
